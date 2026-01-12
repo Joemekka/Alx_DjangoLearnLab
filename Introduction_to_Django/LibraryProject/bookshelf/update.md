@@ -12,6 +12,7 @@ from bookshelf.models import Book
 
 book = Book.objects.get(title="Django for Beginners")
 book.title = "Advanced Django"
+book.publication_year="Nineteen Eighty-Four"
 book.save()
 
 book
