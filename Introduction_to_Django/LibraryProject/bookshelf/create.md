@@ -7,7 +7,7 @@ from bookshelf.models import Book
 
 book = Book.objects.create(
     title="Django for Beginners",
-    author="William S. Vincent",
+    author="George Orwell",
     publication_year=2023
 )
 book
