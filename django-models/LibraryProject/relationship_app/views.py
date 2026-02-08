@@ -4,6 +4,9 @@ from .models import Book, Library
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import redirect
+from django.contrib.auth import login
+
+"from django.contrib.auth import login"
 
 
 def register(request):
