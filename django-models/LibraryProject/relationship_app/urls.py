@@ -35,6 +35,6 @@ urlpatterns = [
     path("member/", member_view, name="member_view"),
     # ===== Task 4: Custom Permissions =====
     path("add_book/edit_book", add_book, name="add_book"),
-    path("book/edit/<int:book_id>/", edit_book, name="edit_book"),
-    path("book/delete/<int:book_id>/", delete_book, name="delete_book"),
+    path("edit_book/<int:book_id>/", edit_book, name="edit_book"),
+    path("delete/book<int:book_id>/", delete_book, name="delete_book"),
 ]
