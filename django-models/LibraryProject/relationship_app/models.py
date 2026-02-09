@@ -1,8 +1,12 @@
-from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth.models import User
+
+
+# relationship_app/models.py
+from django.contrib.auth.models import User
+from django.db import models
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
