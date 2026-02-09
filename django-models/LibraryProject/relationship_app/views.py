@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views.generic import DetailView
-from django.contrib.auth.decorators import user_passes_test, permission_required
+from django.contrib.auth.decorators import permission_required, user_passes_test
 from django.contrib.auth.forms import UserCreationForm
 
 from .models import Book, Library
