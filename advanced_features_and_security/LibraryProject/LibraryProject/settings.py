@@ -130,6 +130,9 @@ STATIC_URL = "static/"
 # SECURITY HEADERS & HTTPS
 # ========================
 
+# Trust X-Forwarded-Proto header for HTTPS detection
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 SECURE_SSL_REDIRECT = True
 
 SECURE_HSTS_SECONDS = 31536000
