@@ -4,7 +4,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "$Precious@988"
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
