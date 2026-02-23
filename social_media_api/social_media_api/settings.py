@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -70,6 +71,10 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+
+PORT = os.environ.get("PORT", "8000")
+PASSWORD = os.environ.get("PASSWORD", "changeme")
 
 # Security settings for production
 SECURE_BROWSER_XSS_FILTER = True
